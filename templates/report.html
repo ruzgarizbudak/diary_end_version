@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style2.css">
+</head>
+<body>
+    <h1>Geri Bildirim</h1>
+    <form method="post" action="{{ url_for('report') }}">
+        <label for="note">Notunuz Nedir?</label>
+        <br>
+        <br>
+        <input type="text" name="note" id="note" placeholder="Notunuzu Giriniz.">
+        <br>
+        <br>
+        <label for="report">Şikayetiniz Nedir?</label>
+        <br>
+        <br>
+        <input type="report" id="report" name="report" placeholder="Şikayetinizi Yazın.">
+        <br>
+        <br>
+        <br>
+        <label for="email">Emailiniz Nedir?</label>
+        <br>
+        <br>
+        <br>
+        <input type="name" id="email" name="email" placeholder="Emailinizi Yazın">
+        <br>
+        <br>            
+        <button class="button" href="/feedback">
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+        <div class="inner">GÖNDER</div>
+        </button>
+    </form>
+
+
+</body>
+</html>
